@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap");
+
+/* font-family: 'Montserrat', sans-serif; */
+
+:root {
+  --montserrat: "Montserrat", sans-serif;
+  --poppins: "Poppins", sans-serif;
+  --primary-gradient:  linear-gradient(191.69deg, #7ca4e9 30.45%, #517ccd 78.84%);
+  --primary-blue: #2949fca7;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  box-shadow: none;
+  background-color: var(--primary-blue);
+  /* background-color: #777777; */
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: none;
+  background-color: transparent;
+  border-radius: 0px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+
+.google-login-btn {
+  /* border: 1px solid red; */
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.04);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -5opx;
+}
+
+.home-hero-container .img-container img {
+  width: 100%;
+  object-fit: cover;
+  height: 35vh;
+}
+.home-hero-container .profile-pic-container {
+  position: relative;
+  display: grid;
+  place-items: center;
+  font-family: var(--montserrat);
+}
+.home-hero-container .profile-pic-container img {
+  /* position: absolute; */
+  /* top: -80px; */
+  margin-top: -80px;
+}
+
+.home-hero-container .logout-container {
+  display: flex;
+  place-items: center;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: var(--montserrat);
+  position: absolute;
+  right: 40px;
+  top: 335px;
+  cursor: pointer;
+}
+
+.courses-container {
+  padding: 50px 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+.courses-container h3{
+  padding: 10px 0;
+}
+.courses-container .courses-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.course-card-container {
+  background: linear-gradient(191.69deg, #7ca4e9 30.45%, #517ccd 78.84%);
+  padding: 24px 45px;
+  border-radius: 16px;
+  position: relative;
+  overflow: hidden;
+  margin: 6px;
+ 
+}
+.course-card-container .course-info-container {
+  margin-left: -20px;
+  color: #ffffff;
+  font-family: var(--poppins);
+}
+
+.course-card-container .course-info-container h2 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 33px;
+  text-transform: capitalize;
+  margin: 4px 0;
+}
+.course-card-container .course-info-container h4{
+  font-weight: 500;
+font-size: 14px;
+line-height: 19px;
+text-transform: capitalize;
+
+}
+.course-card-container .course-info-container p{
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.course-card-container button{
+  background: #182A88;
+  border-radius: 12px;
+  border: none;
+outline: none;
+padding: 10px 15px;
+color: #ffffff;
+  font-family: var(--poppins);
+  margin-top: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+
+.course-card-container button:hover{
+  transform: translateY(-2px);
+}
+.course-card-container  .course-price-container{
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.course-card-container  .course-price-container p{
+position: absolute;
+left: 55px;
+color: #ffffff;
+font-size: 20px;
+font-weight: 600;
+font-family: var(--poppins);
+}
+
+/* quiz page styling */
+
+.quiz-list-container{
+  padding: 30px 80px;
+}
+
+
+/* quiz-card styling */
+
+.quiz-card-container, .quiz-card-container .quiz-info , .quiz-details,  .quiz-ques,  .quiz-time, .quiz-stars {
+  display: flex;
+}
+
+.quiz-card-container{
+  margin: 5px;
+  padding: 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  /* width: 80%; */
+
+}
+
+.quiz-card-container .quiz-info{
+  flex-direction: column;
+  align-items: flex-start;
+  width: 85%;
+  justify-content: space-evenly;
+}
+
+.quiz-card-container .quiz-info .quiz-title{
+  font-weight: 500;
+font-size: 22px;
+/* identical to box height */
+
+letter-spacing: 0.02em;
+
+color: #000000;
+}
+.quiz-card-container .quiz-info .quiz-details{
+  width: 85%;
+  justify-content: space-between;
+  padding: 10px 0 0 0 ;
+}
+.quiz-info .quiz-details >  * img{
+  
+  padding: 0 14px;
+}
+
+.quiz-card-container .quiz-info .quiz-details .info-text .title{
+  font-size: 16px;
+  font-weight: 500;
+  
+  
+}
+.quiz-card-container .quiz-info .quiz-details .info-text .sub-title{
+  font-size: 13px;
+  color: #999999;
+  font-weight: 500;
+
+}
+
+
+.quiz-card-container .start-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+/* footer */
+
+.main-footer,
+.main-footer .footer-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-footer {
+  margin-top: 60px;
+  width: 100%;
+  height: 70px;
+  justify-content: space-between;
+  font-family: var(--montserrat);
+  padding: 0 100px;
+}
+
+.main-footer .logo-container {
+  font-size: 28px;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.main-footer .logo-container span {
+  color: #2947fc;
+}
+
+.main-footer .footer-links {
+  justify-content: space-between;
+  color: #4d4d4d;
+  letter-spacing: 0.05em;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.main-footer .footer-links p {
+  cursor: pointer;
+  margin: auto 12.5px;
+}
+
+.main-footer .copyrights {
+  color: #929292;
+}
